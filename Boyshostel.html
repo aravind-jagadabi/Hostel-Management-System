@@ -1,0 +1,129 @@
+<html>
+<head>
+<style>
+html,
+body {
+height: 100%;
+}
+.h1{
+text-align:center;
+float:center;
+
+}
+
+body {
+margin: 0;
+//background-image:url("https://wallpaperaccess.com/full/327135.jpg");
+//background: linear-gradient(45deg, #49a09d, #5f2c82);
+font-family: sans-serif;
+background-color:#32a852;
+font-weight: 100;
+}
+
+.container {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+table {
+width: 1000px;
+border-collapse: collapse;
+overflow: hidden;
+box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+padding: 15px;
+background-color: rgba(255,255,255,0.2);
+color: #fff;
+}
+
+th {
+text-align: left;
+}
+
+thead {
+th {
+background-color: black;
+}
+}
+
+tbody {
+tr {
+&:hover {
+background-color: rgba(255,255,255,0.3);
+}
+}
+td {
+position: relative;
+&:hover {
+&:before {
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+top: -9999px;
+bottom: -9999px;
+background-color: rgba(255,255,255,0.2);
+z-index: -1;
+}
+}
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Boys Hostel Details</h1>
+<table>
+<thead>
+<tr>
+<th>S.NO</th>
+<th>Name of the Hostel</th>
+<th>Owner Details</th>
+<th>More details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Vikas Boys Hostel</td>
+<td>M.chandra</td>
+<td><a href="Hostel1.php">Get Details</a></td>
+
+</tr>
+<tr>
+<td>2</td>
+<td>Balaji Boys Hostel</td>
+<td>Tirumala Naidu</td>
+<td><a href="Hostel2.php">Get Details</a></td>
+
+</tr>
+<tr>
+<td>3</td>
+<td>Siva sai Boys Hostel</td>
+<td>P.sreedhar</td>
+<td><a href="Hostel3.php">Get Details</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Venky's Plaza</td>
+<td>Venkatesh</td>
+<td><a href="Hostel4.php">Get Details</a></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>Annapurna Boys Hostel</td>
+<td>Kishore Reddy</td>
+<td><a href="Hostel5.php">Get Details</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
+

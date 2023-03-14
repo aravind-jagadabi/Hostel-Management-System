@@ -1,0 +1,132 @@
+<html>
+<head>
+<style>
+html,
+body {
+height: 100%;
+}
+.h1{
+text-align:center;
+float:center;
+
+}
+
+body {
+margin: 0;
+//background: linear-gradient(45deg, #49a09d, #5f2c82);
+//background-image:url("");
+background-repeat:no-repeat;
+    background-size:100%;
+    height:100%;
+font-family: sans-serif;
+background-color:#f54296;
+font-weight: 100;
+}
+
+.container {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+table {
+width: 1000px;
+border-collapse: collapse;
+overflow: hidden;
+box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+padding: 15px;
+background-color: rgba(255,255,255,0.2);
+color: #fff;
+}
+
+th {
+text-align: left;
+}
+
+thead {
+th {
+background-color: black;
+}
+}
+
+tbody {
+tr {
+&:hover {
+background-color: rgba(255,255,255,0.3);
+}
+}
+td {
+position: relative;
+&:hover {
+&:before {
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+top: -9999px;
+bottom: -9999px;
+background-color: rgba(255,255,255,0.2);
+z-index: -1;
+}
+}
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Girls Hostel Details</h1>
+<table>
+<thead>
+<tr>
+<th>S.NO</th>
+<th>Name of the Hostel</th>
+<th>Owner Details</th>
+<th>More details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Gurusai Girls Hostel</td>
+<td>G.Ramesh Babu</td>
+<td><a href="Hostel6.php">Get Details</a></td>
+
+</tr>
+<tr>
+<td>2</td>
+<td>Comfort Girls Hostel</td>
+<td>Swarnalatha</td>
+<td><a href="Hostel7.php">Get Details</a></td>
+
+</tr>
+<tr>
+<td>3</td>
+<td>Sai Siva Jyothi Girls Hostel</td>
+<td>Jyothi,Chandra Babu</td>
+<td><a href="Hostel8.php">Get Details</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Sai Jyothi girls hostel</td>
+<td>Manvitha</td>
+<td><a href="Hostel9.php">Get Details</a></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>Sai Girija girls Hostel</td>
+<td>Lakshmi Devi</td>
+<td><a href="Hostel10.php">Get Details</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
+
